@@ -1,0 +1,4 @@
+/* Cleared out default Vite styles to prevent conflicts */
+body {
+  margin: 0;
+}
