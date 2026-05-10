@@ -1,0 +1,126 @@
+.animated-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  /* Bright elegant base */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.base-light {
+  background: #ffffff;
+}
+
+.white-overlay {
+  background:
+    radial-gradient(ellipse at 60% -20%, rgba(255, 255, 255, 1) 0%, transparent 60%),
+    radial-gradient(ellipse at 110% 80%, rgba(230, 238, 245, 0.8) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.panel-layer-1,
+.panel-layer-2,
+.panel-layer-3 {
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  transform-origin: top left;
+}
+
+.panel-layer-1 {
+  left: -10%;
+  width: 45%;
+  background: linear-gradient(150deg, #04101e 0%, #0b192c 40%, #142845 100%);
+  transform: skewX(-18deg);
+  box-shadow: 25px 0 60px rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.panel-layer-2 {
+  left: -5%;
+  width: 42%;
+  background: linear-gradient(150deg, #d4af37 0%, #f9f295 40%, #aa771c 100%);
+  transform: skewX(-18deg);
+  box-shadow: 15px 0 40px rgba(212, 175, 55, 0.3);
+  z-index: 2;
+}
+
+.panel-layer-3 {
+  left: -15%;
+  width: 50%;
+  background: linear-gradient(150deg, #142845 0%, #04101e 100%);
+  transform: skewX(-22deg);
+  box-shadow: 20px 0 50px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.absolute-badge {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: clamp(150px, 15vw, 200px);
+  height: auto;
+  opacity: 0.95;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+}
+
+.radial-glow-1 {
+  background: radial-gradient(circle at 15% 40%, rgba(74, 144, 226, 0.2) 0%, transparent 50%);
+  animation: breatheGlow 10s ease-in-out infinite alternate;
+  z-index: 4;
+  /* Over the blue panel slightly */
+  pointer-events: none;
+}
+
+.radial-glow-2 {
+  background: radial-gradient(circle at 75% 70%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+  animation: floatGlow 14s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.vignette {
+  background: radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.08) 150%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+@keyframes breatheGlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(-60px, -40px) scale(1.1);
+  }
+}
