@@ -77,7 +77,7 @@ body {
 }
 
 .welcome-gta-logo {
-  height: clamp(28px, 3.5vw, 45px);
+  height: clamp(68px, 7.6vw, 98px);
   object-fit: contain;
 }
 
