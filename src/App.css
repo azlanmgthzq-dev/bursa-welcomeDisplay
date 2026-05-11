@@ -110,6 +110,14 @@ body {
   }
 }
 
+.main-layout.downloading .shimmer-effect {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: #0b192c;
+  animation: none;
+}
+
 .subtitle {
   font-size: clamp(20px, 3vw, 40px);
   font-weight: 600;

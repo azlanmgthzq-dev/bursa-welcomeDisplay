@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import html2canvas from 'html2canvas';
 import AnimatedBackground from './components/AnimatedBackground';
 import HeaderLogos from './components/HeaderLogos';
@@ -14,7 +15,7 @@ function App() {
   const handleSignatureEnd = () => {
     setTimeout(async () => {
       if (certRef.current && !isDownloading) {
-        setIsDownloading(true);
+        flushSync(() => setIsDownloading(true));
         const canvas = await html2canvas(certRef.current, {
           scale: 2,
           useCORS: true,
@@ -38,7 +39,7 @@ function App() {
       <AnimatedBackground />
       <FloatingEffects />
 
-      <div className="main-layout">
+      <div className={`main-layout${isDownloading ? ' downloading' : ''}`}>
         <div className="top-section">
           <div className="top-left-container">
             {/* <img src="/gtaholding.png" alt="GTA Holding" className="gta-holding-logo" /> */}
