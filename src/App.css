@@ -60,13 +60,14 @@ body {
 }
 
 .bursa-logo {
-  height: clamp(60px, 8vh, 150px);
+  height: clamp(80px, 10vh, 160px);
   object-fit: contain;
 }
 
 .gta-logo {
-  height: clamp(80px, 10vh, 160px);
+  height: clamp(80px, 12vh, 160px);
   object-fit: contain;
+  margin-top: clamp(10px, 2vh, 20px);
 }
 
 .welcome-content {
@@ -111,6 +112,7 @@ body {
   text-transform: uppercase;
   margin: clamp(10px, 2vh, 20px) 0;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  font-style: italic;
   /* Cleaner shadow */
 }
 

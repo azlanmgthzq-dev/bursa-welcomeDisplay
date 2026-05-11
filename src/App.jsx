@@ -25,7 +25,7 @@ function App() {
         link.download = `certificate_${new Date().getTime()}.png`;
         link.href = dataUrl;
         link.click();
-        
+
         setTimeout(() => {
           setIsDownloading(false);
         }, 1000);
@@ -37,9 +37,12 @@ function App() {
     <div className="app-wrapper" ref={certRef}>
       <AnimatedBackground />
       <FloatingEffects />
-      
+
       <div className="main-layout">
         <div className="top-section">
+          <div className="top-left-container">
+            {/* <img src="/gtaholding.png" alt="GTA Holding" className="gta-holding-logo" /> */}
+          </div>
           <HeaderLogos />
         </div>
 

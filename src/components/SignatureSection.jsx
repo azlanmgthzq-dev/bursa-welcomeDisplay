@@ -21,7 +21,7 @@ const SignatureSection = ({ onSignatureEnd, isDownloading }) => {
         />
       </div>
       <div className="signature-line glow-line"></div>
-      <p className="signature-label">SIGNATURE</p>
+      <p className="signature-label">BURSA SECURITIES</p>
     </motion.div>
   );
 };

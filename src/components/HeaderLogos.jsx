@@ -9,8 +9,8 @@ const HeaderLogos = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
+      <img src="/gtaholding.png" alt="GTA Logo" className="gta-logo" />
       <img src="/bursa-logo.png" alt="Bursa Logo" className="bursa-logo" />
-      <img src="/GTA LOGO 2.png" alt="GTA Logo" className="gta-logo" />
     </motion.div>
   );
 };
