@@ -79,8 +79,8 @@ body {
 
 .welcome-text {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(110px, 12vw, 150px);
-  margin: 0;
+  font-size: clamp(80px, 6vw, 150px);
+  margin: 0px 0;
   padding: 0 30px;
   /* Prevents cursive swashes from being truncated by background-clip */
   line-height: 1.2;
