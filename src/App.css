@@ -76,6 +76,11 @@ body {
   align-items: center;
 }
 
+.welcome-gta-logo {
+  height: clamp(28px, 3.5vw, 45px);
+  object-fit: contain;
+}
+
 .welcome-text {
   font-family: 'Great Vibes', cursive;
   font-size: clamp(80px, 6vw, 150px);
